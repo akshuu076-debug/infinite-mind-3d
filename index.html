@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#090d18"><title>INFINITE DIMENSION</title>
+<link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loading">BUILDING YOUR DIMENSION…</div>
+<div id="menu" class="overlay">
+  <div class="brand">INFINITE <span>DIMENSION</span></div><p class="sub">A perspective puzzle experience</p>
+  <button data-mode="endless">ENDLESS MODE</button><button data-mode="story">STORY MODE</button><button data-mode="challenge">CHALLENGE MODE</button>
+  <p class="hint">Move through impossible rooms. Change perspective. Find the way out.</p>
+  <small>Original indie puzzle prototype • Progress saved on this device</small>
+</div>
+<div id="hud" class="hidden">
+  <div class="top"><span id="modeLabel">ENDLESS</span><span id="levelLabel">ROOM 1</span><button id="pause">Ⅱ</button></div>
+  <div id="objective">Place the prism on the glowing pad.</div>
+  <div id="crosshair">+</div>
+  <div id="toast"></div>
+  <div id="controls">
+    <div id="stick"><div id="knob"></div></div>
+    <div class="rightControls"><button id="grab">GRAB</button><button id="jump">JUMP</button><button id="hintBtn">HINT</button></div>
+  </div>
+</div>
+<div id="pausePanel" class="overlay hidden"><h2>PAUSED</h2><button id="resume">RESUME</button><button id="restart">RESTART ROOM</button><button id="home">MAIN MENU</button></div>
+<div id="winPanel" class="overlay hidden"><h2>DIMENSION SHIFTED</h2><p id="winText">Room cleared.</p><button id="next">NEXT ROOM</button><button id="winHome">MAIN MENU</button></div>
+<script type="module" src="game.js"></script>
+</body></html>
